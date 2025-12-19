@@ -6,7 +6,7 @@ from PIL import Image
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input as mobilenet_v2_preprocess_input
 
 # Load model
-interpreter = tf.lite.Interpreter(model_path="saved_model/animal_class.tflite")
+interpreter = tf.lite.Interpreter(model_path="model/animal_class.tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
