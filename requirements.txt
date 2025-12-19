@@ -2,4 +2,3 @@ pillow
 numpy
 tensorflow
 streamlit
-json
