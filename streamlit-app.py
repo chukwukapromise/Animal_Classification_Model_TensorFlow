@@ -77,4 +77,4 @@ if uploaded_file is not None:
         class_id = np.argmax(prediction)
         confidence = np.max(prediction) * 100
 
-        st.success(f"Animal: {label_dict[class_id]} ({confidence:.2f}%)")
+        st.success(f"{label_dict[class_id]} ({confidence:.2f}%)")
