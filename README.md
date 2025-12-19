@@ -17,7 +17,7 @@ The model has been trained on a diverse dataset covering 90 different animal spe
 4. The predicted animal name is displayed instantly with confidence score.
 
 
-# Key Features
+# Key features
 
 1. Image-based animal recognition
 
@@ -30,6 +30,6 @@ The model has been trained on a diverse dataset covering 90 different animal spe
 5. Real-time prediction with visual feedback
 
 
-# Tech Stack
+# Tech stack
 
 Python, TensorFlow / Keras, MobileNetV2, OpenCV, NumPy, Streamlit.
