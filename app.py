@@ -3,6 +3,7 @@ import numpy as np
 import streamlit as st
 import tensorflow as tf
 import json
+from PIL import Image
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input as mobilenet_v2_preprocess_input
 
 # Load model
@@ -67,15 +68,15 @@ animal_info = load_animal_descriptions()
 
 # Prediction
 if uploaded_file is not None:
-    file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
-    opencv_image = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
-    opencv_image = cv2.cvtColor(opencv_image, cv2.COLOR_BGR2RGB)
-
-    st.image(opencv_image, channels="RGB")
-
-    resized = cv2.resize(opencv_image, (224, 224))
-    resized = mobilenet_v2_preprocess_input(resized.astype(np.float32))
-    img_reshape = np.expand_dims(resized, axis=0)
+    image = Image.open(uploaded_file).convert("RGB")
+    st.image(image, use_column_width=True)
+    
+    resized = image.resize((224, 224))
+    
+    img_array = np.array(resized).astype(np.float32)
+    img_array = mobilenet_v2_preprocess_input(img_array)
+    
+    img_reshape = np.expand_dims(img_array, axis=0)
 
     if st.button("Generate Prediction"):
         
