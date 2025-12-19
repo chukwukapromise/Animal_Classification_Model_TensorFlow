@@ -12,7 +12,6 @@ interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
-# App title and description
 st.title("Animal Classifier")
 st.text(
     "This model has been trained on a diverse dataset covering 90 different animal species, "
