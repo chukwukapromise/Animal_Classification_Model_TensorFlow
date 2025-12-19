@@ -1,0 +1,542 @@
+{
+  "antelope": {
+    "summary": "Antelopes are slender, fast-running herbivorous mammals known for agility.",
+    "habitat": "Grasslands and savannas",
+    "diet": "Grasses, leaves",
+    "lifespan": "10\u201325 years"
+  },
+  "badger": {
+    "summary": "Badgers are burrowing mammals with strong claws and nocturnal habits.",
+    "habitat": "Forests and farmlands",
+    "diet": "Insects, roots",
+    "lifespan": "4\u201314 years"
+  },
+  "bat": {
+    "summary": "Bats are the only mammals capable of true flight.",
+    "habitat": "Caves, forests",
+    "diet": "Insects, fruits",
+    "lifespan": "10\u201330 years"
+  },
+  "bear": {
+    "summary": "Bears are large omnivorous mammals with thick fur.",
+    "habitat": "Forests, mountains",
+    "diet": "Plants, fish, meat",
+    "lifespan": "20\u201330 years"
+  },
+  "bee": {
+    "summary": "Bees are pollinating insects essential to ecosystems.",
+    "habitat": "Gardens and fields",
+    "diet": "Nectar, pollen",
+    "lifespan": "Weeks to 5 years"
+  },
+  "beetle": {
+    "summary": "Beetles are insects with hardened forewings.",
+    "habitat": "Various environments",
+    "diet": "Plants, organic matter",
+    "lifespan": "1\u201310 years"
+  },
+  "bison": {
+    "summary": "Bison are massive grazing mammals native to plains.",
+    "habitat": "Grasslands",
+    "diet": "Grasses",
+    "lifespan": "15\u201325 years"
+  },
+  "boar": {
+    "summary": "Boars are wild pigs with tusks and strong bodies.",
+    "habitat": "Forests",
+    "diet": "Roots, fruits",
+    "lifespan": "10\u201314 years"
+  },
+  "butterfly": {
+    "summary": "Butterflies are colorful insects with metamorphic life cycles.",
+    "habitat": "Meadows, gardens",
+    "diet": "Nectar",
+    "lifespan": "2\u201312 months"
+  },
+  "cat": {
+    "summary": "Cats are small carnivorous mammals kept as pets.",
+    "habitat": "Domestic environments",
+    "diet": "Meat",
+    "lifespan": "12\u201318 years"
+  },
+  "caterpillar": {
+    "summary": "Caterpillar is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "chimpanzee": {
+    "summary": "Chimpanzee is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "cockroach": {
+    "summary": "Cockroach is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "cow": {
+    "summary": "Cow is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "coyote": {
+    "summary": "Coyote is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "crab": {
+    "summary": "Crab is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "crow": {
+    "summary": "Crow is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "deer": {
+    "summary": "Deer is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "dog": {
+    "summary": "Dog is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "dolphin": {
+    "summary": "Dolphin is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "donkey": {
+    "summary": "Donkey is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "dragon fly": {
+    "summary": "Dragon Fly is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "duck": {
+    "summary": "Duck is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "eagle": {
+    "summary": "Eagle is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "elephant": {
+    "summary": "Elephant is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "flamingo": {
+    "summary": "Flamingo is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "fly": {
+    "summary": "Fly is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "fox": {
+    "summary": "Fox is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "goat": {
+    "summary": "Goat is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "goldfish": {
+    "summary": "Goldfish is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "goose": {
+    "summary": "Goose is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "gorilla": {
+    "summary": "Gorilla is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "grasshopper": {
+    "summary": "Grasshopper is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "hamster": {
+    "summary": "Hamster is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "hare": {
+    "summary": "Hare is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "hedgehog": {
+    "summary": "Hedgehog is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "hippopotamus": {
+    "summary": "Hippopotamus is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "hornbill": {
+    "summary": "Hornbill is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "horse": {
+    "summary": "Horse is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "hummingbird": {
+    "summary": "Hummingbird is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "hyena": {
+    "summary": "Hyena is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "jellyfish": {
+    "summary": "Jellyfish is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "kangaroo": {
+    "summary": "Kangaroo is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "koala": {
+    "summary": "Koala is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "ladybugs": {
+    "summary": "Ladybugs is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "leopard": {
+    "summary": "Leopard is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "lion": {
+    "summary": "Lion is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "lizard": {
+    "summary": "Lizard is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "lobster": {
+    "summary": "Lobster is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "mosquito": {
+    "summary": "Mosquito is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "moth": {
+    "summary": "Moth is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "mouse": {
+    "summary": "Mouse is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "octopus": {
+    "summary": "Octopus is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "okapi": {
+    "summary": "Okapi is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "orangutan": {
+    "summary": "Orangutan is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "otter": {
+    "summary": "Otter is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "owl": {
+    "summary": "Owl is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "ox": {
+    "summary": "Ox is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "oyster": {
+    "summary": "Oyster is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "panda": {
+    "summary": "Panda is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "parrot": {
+    "summary": "Parrot is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "pelecaniformes": {
+    "summary": "Pelecaniformes is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "penguin": {
+    "summary": "Penguin is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "pig": {
+    "summary": "Pig is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "pigeon": {
+    "summary": "Pigeon is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "porcupine": {
+    "summary": "Porcupine is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "possum": {
+    "summary": "Possum is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "raccoon": {
+    "summary": "Raccoon is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "rat": {
+    "summary": "Rat is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "reindeer": {
+    "summary": "Reindeer is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "rhinoceros": {
+    "summary": "Rhinoceros is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "sandpiper": {
+    "summary": "Sandpiper is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "seahorse": {
+    "summary": "Seahorse is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "seal": {
+    "summary": "Seal is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "shark": {
+    "summary": "Shark is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "sheep": {
+    "summary": "Sheep is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "snake": {
+    "summary": "Snake is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "sparrow": {
+    "summary": "Sparrow is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "squid": {
+    "summary": "Squid is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "squirrel": {
+    "summary": "Squirrel is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "star": {
+    "summary": "Star is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "swan": {
+    "summary": "Swan is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "tiger": {
+    "summary": "Tiger is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "turkey": {
+    "summary": "Turkey is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "turtle": {
+    "summary": "Turtle is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "whale": {
+    "summary": "Whale is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "wolf": {
+    "summary": "Wolf is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "wombat": {
+    "summary": "Wombat is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "woodpecker": {
+    "summary": "Woodpecker is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  },
+  "zebra": {
+    "summary": "Zebra is a well-known animal species commonly studied in biology.",
+    "habitat": "Natural habitats depending on species",
+    "diet": "Species-specific diet",
+    "lifespan": "Varies by species"
+  }
+}
