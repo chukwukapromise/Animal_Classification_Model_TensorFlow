@@ -5,7 +5,7 @@ import tensorflow as tf
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input as mobilenet_v2_preprocess_input
 
 # Load TFLite model
-interpreter = tf.lite.Interpreter(model_path="model/animal_class.tflite")
+interpreter = tf.lite.Interpreter(model_path="model/animal-class.tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
