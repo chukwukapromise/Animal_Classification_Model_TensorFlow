@@ -140,7 +140,7 @@ left, center, right = st.columns([1, 3, 1])
 with center:
     st.title("Animal Classifier")
     st.write(
-        "This model has been trained to classify different animal species, and give a full description about each animal identified,"
+        "This model has been trained to classify different animal species, and give a full description about each animal identified, "
         "enabling accurate and fast predictions."
     )
 
