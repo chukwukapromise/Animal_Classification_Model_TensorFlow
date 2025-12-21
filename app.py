@@ -17,7 +17,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     interpreter = tf.lite.Interpreter(
-        model_path="saved_model/animal_class.tflite"
+        model_path="model/animal_class.tflite"
     )
     interpreter.allocate_tensors()
     return interpreter
