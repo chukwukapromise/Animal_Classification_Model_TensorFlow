@@ -10,7 +10,6 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 # Page config
 st.set_page_config(
     page_title="Animal Classifier",
-    page_icon="🐾",
     layout="wide"
 )
 
