@@ -6,14 +6,21 @@ import requests
 import re
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 
-# Page config
+# ---------------- PAGE CONFIG ----------------
 st.set_page_config(
     page_title="Animal Classifier",
     page_icon="🐾",
     layout="wide"
 )
 
-# Load TFLite model
+# ---------------- SESSION STATE ----------------
+if "image" not in st.session_state:
+    st.session_state.image = None
+
+if "prediction" not in st.session_state:
+    st.session_state.prediction = None
+
+# ---------------- LOAD MODEL ----------------
 @st.cache_resource
 def load_model():
     interpreter = tf.lite.Interpreter(
@@ -26,7 +33,7 @@ interpreter = load_model()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
-# Wikipedia helpers
+# ---------------- WIKIPEDIA HELPERS ----------------
 def get_clean_wikipedia_text(query):
     url = "https://en.wikipedia.org/w/api.php"
     params = {
@@ -49,7 +56,6 @@ def get_clean_wikipedia_text(query):
     if not text:
         return None
 
-    # Remove unwanted sections
     stop_sections = [
         "\n== References ==",
         "\n== External links ==",
@@ -71,44 +77,31 @@ def render_wikipedia_text(text):
         if not line:
             continue
 
-        # Match heading syntax
         match = re.match(r"^(=+)\s*(.*?)\s*\1$", line)
 
         if match:
             level = len(match.group(1))
             heading = match.group(2)
 
-            # H1
             if level == 1:
                 st.header(heading)
-
-            # H2
             elif level == 2:
                 st.subheader(heading)
-
-            # H3
             elif level == 3:
                 st.markdown(f"**{heading}**")
-
-            # H4
             elif level == 4:
                 st.markdown(f"***{heading}***")
-
-            # H5
             elif level == 5:
                 st.markdown(f"*{heading}*")
-
-            # H6+
             else:
                 st.markdown(
                     f"<small><i>{heading}</i></small>",
                     unsafe_allow_html=True
                 )
-
         else:
             st.write(line)
 
-# Labels
+# ---------------- LABELS ----------------
 label_dict = {
     0: 'antelope', 1: 'badger', 2: 'bat', 3: 'bear',
     4: 'bee', 5: 'beetle', 6: 'bison', 7: 'boar',
@@ -141,33 +134,36 @@ label_dict = {
     87: 'wombat', 88: 'woodpecker', 89: 'zebra'
 }
 
-
-# Layout
+# ---------------- LAYOUT ----------------
 left, center, right = st.columns([1, 3, 1])
 
 with center:
     st.title("Animal Classifier")
     st.write(
         "This model has been trained on a diverse dataset covering 90 different animal species, "
-    "enabling accurate and fast predictions. The application is designed with a simple, "
-    "user-friendly interface and is optimized for real-time inference."
+        "enabling accurate and fast predictions."
     )
 
     uploaded_file = st.file_uploader(
-        "Upload an image file to get started",
+        "Upload an image file",
         type=["jpg", "jpeg", "png", "webp"]
     )
 
+    # Store image
     if uploaded_file:
-        image = Image.open(uploaded_file).convert("RGB")
-        st.image(image, use_container_width=True)
+        st.session_state.image = Image.open(uploaded_file).convert("RGB")
+        st.session_state.prediction = None
 
-        img = image.resize((224, 224))
-        img_array = np.array(img).astype(np.float32)
-        img_array = preprocess_input(img_array)
-        img_array = np.expand_dims(img_array, axis=0)
+    # Display image persistently
+    if st.session_state.image:
+        st.image(st.session_state.image, use_container_width=True)
 
         if st.button("Generate Prediction"):
+            img = st.session_state.image.resize((224, 224))
+            img_array = np.array(img).astype(np.float32)
+            img_array = preprocess_input(img_array)
+            img_array = np.expand_dims(img_array, axis=0)
+
             interpreter.set_tensor(input_details[0]["index"], img_array)
             interpreter.invoke()
             output = interpreter.get_tensor(output_details[0]["index"])
@@ -176,11 +172,20 @@ with center:
             confidence = float(np.max(output) * 100)
             animal = label_dict[class_id]
 
-            st.success(f"{animal.title()} ({confidence:.2f}%)")
+            st.session_state.prediction = {
+                "animal": animal,
+                "confidence": confidence
+            }
 
-            article_text = get_clean_wikipedia_text(animal)
+    # Display prediction + Wikipedia
+    if st.session_state.prediction:
+        animal = st.session_state.prediction["animal"]
+        confidence = st.session_state.prediction["confidence"]
 
-            if article_text:
-                render_wikipedia_text(article_text)
-            else:
-                st.warning("Article could not be retrieved.")
+        st.success(f"{animal.title()} ({confidence:.2f}%)")
+
+        article_text = get_clean_wikipedia_text(animal)
+        if article_text:
+            render_wikipedia_text(article_text)
+        else:
+            st.warning("Article could not be retrieved.")
