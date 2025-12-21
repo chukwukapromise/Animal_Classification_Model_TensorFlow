@@ -1,3 +1,4 @@
+# Imports 
 import streamlit as st
 import numpy as np
 import tensorflow as tf
@@ -6,21 +7,21 @@ import requests
 import re
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 
-# ---------------- PAGE CONFIG ----------------
+# Page config
 st.set_page_config(
     page_title="Animal Classifier",
     page_icon="🐾",
     layout="wide"
 )
 
-# ---------------- SESSION STATE ----------------
+# Session state
 if "image" not in st.session_state:
     st.session_state.image = None
 
 if "prediction" not in st.session_state:
     st.session_state.prediction = None
 
-# ---------------- LOAD MODEL ----------------
+# Load model 
 @st.cache_resource
 def load_model():
     interpreter = tf.lite.Interpreter(
@@ -33,7 +34,7 @@ interpreter = load_model()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
-# ---------------- WIKIPEDIA HELPERS ----------------
+# Wikipedia helpers
 def get_clean_wikipedia_text(query):
     url = "https://en.wikipedia.org/w/api.php"
     params = {
@@ -101,7 +102,7 @@ def render_wikipedia_text(text):
         else:
             st.write(line)
 
-# ---------------- LABELS ----------------
+# Labels
 label_dict = {
     0: 'antelope', 1: 'badger', 2: 'bat', 3: 'bear',
     4: 'bee', 5: 'beetle', 6: 'bison', 7: 'boar',
@@ -134,7 +135,7 @@ label_dict = {
     87: 'wombat', 88: 'woodpecker', 89: 'zebra'
 }
 
-# ---------------- LAYOUT ----------------
+# Layout
 left, center, right = st.columns([1, 3, 1])
 
 with center:
